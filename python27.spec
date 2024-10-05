@@ -24,38 +24,38 @@
 
 #  Build tkinter?  "auto" enables it if /usr/bin/wish exists.
 %define config_tkinter yes
-%define config_tkinter auto
-%define config_tkinter no
+# %define config_tkinter auto
+# %define config_tkinter no
 
 
 #  Include HTML documentation?
 %define config_include_docs yes
-%define config_include_docs no
+#%define config_include_docs no
 
 
 #  Include tools?
-%define config_include_tools no
+#%define config_include_tools no
 %define config_include_tools yes
 
 
 #  Enable IPV6?
 %define config_ipv6 yes
-%define config_ipv6 no
+#%define config_ipv6 no
 
 
 #  Use pymalloc?
-%define config_pymalloc no
+#%define config_pymalloc no
 %define config_pymalloc yes
 
 
 #  Is the resulting package and the installed binary named "python" or "python2"?
-%define config_binsuffix none
+#%define config_binsuffix none
 %define config_binsuffix 2.7
 
 
 #  Build shared libraries or .a library?
 %define config_sharedlib yes
-%define config_sharedlib no
+#%define config_sharedlib no
 
 
 #  Location of the HTML directory to place tho documentation in?
