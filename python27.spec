@@ -1,7 +1,7 @@
 # To Build:
 #
 # sudo yum -y install rpmdevtools && rpmdev-setuptree
-# sudo yum -y install tk-devel tcl-devel expat-devel db4-devel gdbm-devel sqlite-devel bzip2-devel openssl-devel ncurses-devel readline-devel
+# sudo yum -y install tk-devel tcl-devel expat-devel libdb-devel gdbm-devel sqlite-devel bzip2-devel openssl-devel ncurses-devel readline-devel
 # wget https://raw.github.com/nmilford/rpm-python27/master/python27.spec -O ~/rpmbuild/SPECS/python27.spec
 # wget https://www.python.org/ftp/python/2.7.10/Python-2.7.10.tgz -O ~/rpmbuild/SOURCES/Python-2.7.10.tgz
 # QA_RPATHS=$[ 0x0001|0x0010 ] rpmbuild -bb ~/rpmbuild/SPECS/python27.spec
@@ -101,7 +101,7 @@ Source: https://www.python.org/ftp/python/%{version}/Python-%{version}.tgz
 Source1: https://docs.python.org/2/archives/python-%{version}-docs-html.tar.bz2
 %endif
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
-BuildRequires: gcc make expat-devel db4-devel gdbm-devel sqlite-devel readline-devel zlib-devel bzip2-devel openssl-devel
+BuildRequires: gcc make expat-devel libdb-devel gdbm-devel sqlite-devel readline-devel zlib-devel bzip2-devel openssl-devel
 AutoReq: no
 Prefix: %{__prefix}
 Vendor: Sean Reifschneider <jafo-rpms@tummy.com>
